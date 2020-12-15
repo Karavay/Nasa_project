@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+  {{apod.title}}
+{% endblock %}
+{% block content %}
+  <div class="apod">
+    <p>{{apod.title}}</p>
+    <p>{{apod.pub_date}}</p>
+    <p>{{apod.explanation}}</p>
+    {% if apod.media_type == 'image' %}
+      <img class='' src={{apod.image_url}} alt="">
+    {% elif apod.media_type == 'video' %}
+      <iframe src="{{apod.image_url}}" width="900" height="500"></iframe>
+    {% endif %}
+  </div>
+{% endblock %}
+<!-- <div class="data">
+  <div class="">
+    <p>Получено: {{datum.received_date}}</p>
+  </div>
+  <h1 class='data_title'>{{datum.title}}</h1>
+  <p class='data_desc'>{{datum.explanation}}</p>
+  <img class='data_photos' src={{datum.image_hd_url}}>
+</div> -->

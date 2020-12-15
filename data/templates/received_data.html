@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+  received data
+{% endblock %}
+
+{% block content %}
+    <div class="main_div">
+      <div class="content">
+        {% for datum in data %}
+          <a href="{% url 'extended_info' pk=datum.pk %}">
+            {% if datum.media_type == 'image' %}
+              <img class='content_img' src={{datum.image_url}} alt="">
+            {% elif datum.media_type == 'video' %}
+              <img class='content_img' src="{% static 'img/camera.jpg' %}" alt="">
+            {% endif %}
+          </a>
+        {% empty %}
+          <p>no data for you right now((</p>
+        {% endfor %}
+      </div>
+
+      <div class='add_data'>
+        <!-- <a href="data_in_time">
+          <button type="button" name="button">add data in time</button>
+        </a> -->
+        <div class="data_simple">
+          <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" name="button">Add</button>
+          </form>
+        </div>
+      </div>
+    </div>
+{% endblock %}

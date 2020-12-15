@@ -1,0 +1,76 @@
+body {
+  background-color: #F0FFFF;
+}
+
+.content {
+  width:615px;
+  border: solid 3px #436e70;
+  position:absolute;
+  left:50%;
+  margin-left:-307.5px;
+}
+
+.content_img {
+  width:150px;
+  height:200px;
+
+}
+
+.add_data {
+  width:250px;
+}
+
+.data_simple {
+  border:solid 3px #436e70;
+  padding: 5px;
+}
+/* .data_photos {
+  width: 30px;
+  height: 45px;
+}
+
+.data_desc{
+  width:80%;
+}
+
+.bullet {
+margin-left: 0;
+list-style: none;
+counter-reset: li;
+}
+.bullet li {
+position: relative;
+margin-bottom: 1.5em;
+border: 3px solid #CADFCF;
+padding: 0.6em;
+border-radius: 4px;
+background: #FEFEFE;
+color: #231F20;
+font-family: "Trebuchet MS", "Lucida Sans";
+}
+.bullet li:before {
+position: absolute;
+top: -0.7em;
+padding-left: 0.4em;
+padding-right: 0.4em;
+font-size: 16px;
+font-weight: bold;
+color: #DCC24B;
+background: #FEFEFE;
+border-radius: 50%;
+counter-increment: li;
+content: counter(li);
+}
+
+.layer {
+    overflow: scroll; /* Добавляем полосы прокрутки */
+    width: 300px; /* Ширина блока */
+    height: 98%; /* Высота блока */
+
+    border: solid 3px #5F9EA0; /* Параметры рамки */
+    position: absolute;
+    top: 1%;
+    left: 20%;
+
+
+} */
