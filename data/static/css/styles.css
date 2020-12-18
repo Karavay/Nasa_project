@@ -3,11 +3,13 @@ body {
 }
 
 .content {
-  width:615px;
+  width:630px;
+  height:500px;
   border: solid 3px #436e70;
   position:absolute;
   left:50%;
   margin-left:-307.5px;
+  overflow:scroll;
 }
 
 .content_img {
